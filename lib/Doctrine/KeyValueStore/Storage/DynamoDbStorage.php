@@ -33,14 +33,12 @@ use Doctrine\KeyValueStore\NotFoundException;
 class DynamoDbStorage implements Storage
 {
     /**
-     * @var \Aws\DynamoDb\DynamoDbClient
+     * @var DynamoDbClient
      */
     protected $client;
 
     /**
-     * Constructor
-     *
-     * @param \Aws\DynamoDb\DynamoDbClient $client
+     * @param DynamoDbClient $client
      */
     public function __construct(DynamoDbClient $client)
     {
@@ -146,9 +144,7 @@ class DynamoDbStorage implements Storage
     }
 
     /**
-     * Return a name of the underlying storage.
-     *
-     * @return string
+     * {@inheritDoc}
      */
     public function getName()
     {
