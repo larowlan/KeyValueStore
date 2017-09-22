@@ -58,6 +58,7 @@ So far the following drivers exist (and are documented here):
 * Microsoft Windows Azure Table
 * Couchbase
 * CouchDB
+* DynamoDB
 * MongoDB
 * Riak
 
